@@ -18,15 +18,15 @@ namespace CustomFont
 
             var label = new UILabel
             {
-                Text = "Hello",
-                Font = UIFont.FromName("GreatVibes-Regular", 42f),
+                Text = "are easy & fun",
+                Font = UIFont.FromName("GreatVibes-Regular", 32f),
 
             };
 
             View.BackgroundColor = UIColor.White;
             View.AddSubview(label);
 
-            label.AutoPinEdgeToSuperviewEdge(ALEdge.Top, 32f);
+            label.AutoPinEdge(ALEdge.Top, ALEdge.Bottom, StoryboardLabel, 32f);
             label.AutoAlignAxisToSuperviewAxis(ALAxis.Vertical);
         }
 
